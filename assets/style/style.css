@@ -76,4 +76,182 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  color: #FFFFFF;
 }
+
+@media (max-width: 360px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/*------------------------*/
+.wrapper {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.perfect-travel {
+  background: url("../images/header-img.jpg") 0 0/100% auto no-repeat;
+  width: 1920px;
+  height: 831px;
+}
+
+@media (max-width: 1024px) {
+  .perfect-travel {
+    width: 1024px;
+    height: 831px;
+    background: url("../images/header-img-2.jpg") 0 0/100% no-repeat;
+  }
+}
+
+@media (max-width: 360px) {
+  .perfect-travel {
+    width: 360px;
+    height: 488px;
+    background: url("../images/header-img-3.jpg") 0 0/contain no-repeat;
+  }
+}
+
+@media (max-width: 360px) {
+  .perfect-travel__logo-image {
+    display: none;
+  }
+}
+
+.perfect-travel__logo-image-320 {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .perfect-travel__logo-image-320 {
+    width: 133px;
+    height: 22px;
+    display: block;
+  }
+}
+
+.perfect-travel__top-block {
+  display: flex;
+  justify-content: space-between;
+  width: 1168px;
+  height: 88px;
+  margin: 0 auto;
+  padding: 28.88px 0;
+}
+
+@media (max-width: 1024px) {
+  .perfect-travel__top-block {
+    width: 910px;
+  }
+}
+
+@media (max-width: 360px) {
+  .perfect-travel__top-block {
+    padding: 33px 0;
+    width: 320px;
+  }
+}
+
+.perfect-travel__tel-number-link {
+  color: #FFF;
+  height: 28px;
+  line-height: 142%;
+}
+
+.perfect-travel__tagline {
+  margin: 119px auto 0 auto;
+  width: 768px;
+  height: 315px;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 109%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 360px) {
+  .perfect-travel__tagline {
+    width: 360px;
+    height: 114px;
+    font-size: 34px;
+    margin: 52px 0 0 0;
+    letter-spacing: 0.02em;
+    line-height: 112%;
+  }
+}
+
+.perfect-travel__text {
+  margin: 50px auto 0 auto;
+  width: 562px;
+  line-height: 142%;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .perfect-travel__text {
+    width: 442px;
+  }
+}
+
+@media (max-width: 360px) {
+  .perfect-travel__text {
+    margin-top: 40px;
+    width: 310px;
+    height: 69px;
+  }
+}
+
+.perfect-travel__button {
+  display: block;
+  width: 118px;
+  height: 34px;
+  margin: 50px auto;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  color: #000;
+  font-size: 17px;
+  line-height: 34px;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  .perfect-travel__button {
+    width: 114px;
+    height: 33px;
+    margin: 40px auto;
+  }
+}
+
+.navigation {
+  width: 468px;
+}
+
+@media (max-width: 1024px) {
+  .navigation {
+    width: 408px;
+  }
+}
+
+@media (max-width: 360px) {
+  .navigation {
+    display: none;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  height: 28px;
+}
+
+.navigation__link {
+  line-height: 142%;
+  color: #FFFFFF;
+}
+
+.navigation__link:hover {
+  text-decoration: underline;
+}
+
+/*------------------------*/
