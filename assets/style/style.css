@@ -77,6 +77,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: #FFFFFF;
+  background-color: #f9f7f4;
+  overflow-x: hidden;
 }
 
 @media (max-width: 360px) {
@@ -87,7 +89,7 @@ body {
 
 /*------------------------*/
 .wrapper {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -254,4 +256,800 @@ body {
   text-decoration: underline;
 }
 
+/*------------------------*/
+.choose-tour__wrapper {
+  width: 1155px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .choose-tour__wrapper {
+    width: 1024px;
+  }
+}
+
+@media (max-width: 360px) {
+  .choose-tour__wrapper {
+    width: 360px;
+  }
+}
+
+.choose-tour__title {
+  margin: 135px 0 0 16px;
+}
+
+@media (max-width: 1024px) {
+  .choose-tour__title {
+    margin: 135px auto 0 auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .choose-tour__title {
+    margin: 75px auto 0 auto;
+  }
+}
+
+.choose-tour__list {
+  width: 700px;
+  height: 34px;
+  display: flex;
+  margin: 35px auto 100px auto;
+}
+
+@media (max-width: 1024px) {
+  .choose-tour__list {
+    margin: 35px 154px 100px;
+  }
+}
+
+@media (max-width: 360px) {
+  .choose-tour__list {
+    width: 270px;
+    flex-wrap: wrap;
+    margin: 32px 42px 70px;
+  }
+}
+
+.choose-tour__item {
+  padding-left: 30px;
+}
+
+.choose-tour__item:first-child {
+  padding-left: 10px;
+}
+
+.choose-tour__item:first-child a {
+  color: #EFA501;
+  border-bottom: 2px solid #EFA501;
+}
+
+@media (max-width: 360px) {
+  .choose-tour__item {
+    padding: 1px 0 0 10px;
+  }
+  .choose-tour__item:nth-child(4) {
+    padding: 14px 0 0 50px;
+  }
+  .choose-tour__item:nth-child(5) {
+    padding: 14px 0 0 10px;
+  }
+}
+
+.choose-tour__link {
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 122%;
+  color: #1B1F2B;
+}
+
+.choose-tour__link:hover {
+  border-bottom: 2px solid #1B1F2B;
+}
+
+@media (max-width: 360px) {
+  .choose-tour__link {
+    font-size: 16px;
+  }
+}
+
+.main-title-block {
+  font-size: 59px;
+  font-weight: bold;
+  line-height: 124%;
+  text-align: center;
+  color: #1B1F2B;
+}
+
+@media (max-width: 360px) {
+  .main-title-block {
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+  }
+}
+
+.card-collection {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 360px) {
+  .card-collection {
+    width: 360px;
+  }
+}
+
+.card-collection__item {
+  display: inline-block;
+  width: 370px;
+  height: 531px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 30px 0;
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item {
+    width: 450px;
+    height: 531px;
+    margin: 0 18px 18px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item {
+    width: 318px;
+    height: 318px;
+  }
+}
+
+.card-collection__item:nth-child(1) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-1.jpg") 0 0/cover no-repeat;
+  border-radius: 50px;
+  background-size: 100% 100%;
+  transition: background-size .3s ease;
+}
+
+.card-collection__item:nth-child(1):hover {
+  cursor: pointer;
+  background-size: 120% 120%;
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(1) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-1.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(1) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-1.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(1) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-1-1024.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(1):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(1) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-1-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 360px) {
+  .card-collection__item:nth-child(1) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-1-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(1) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-1-300.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(1):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(1) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-1-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 360px) {
+  .card-collection__item:nth-child(1) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-1-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+.card-collection__item:nth-child(2) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-2.jpg") 0 0/cover no-repeat;
+  border-radius: 50px;
+  background-size: 100% 100%;
+  transition: background-size .3s ease;
+}
+
+.card-collection__item:nth-child(2):hover {
+  cursor: pointer;
+  background-size: 120% 120%;
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(2) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-2.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(2) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-2.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(2) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-2-1024.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(2):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(2) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-2-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 360px) {
+  .card-collection__item:nth-child(2) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-2-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(2) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-2-300.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(2):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(2) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-2-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 360px) {
+  .card-collection__item:nth-child(2) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-2-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+.card-collection__item:nth-child(3) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-3.jpg") 0 0/cover no-repeat;
+  border-radius: 50px;
+  background-size: 100% 100%;
+  transition: background-size .3s ease;
+  margin: 0;
+}
+
+.card-collection__item:nth-child(3):hover {
+  cursor: pointer;
+  background-size: 120% 120%;
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(3) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-3.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(3) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-3.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(3) {
+    margin: 0 18px 18px 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-3-1024.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(3):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(3) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-3-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 360px) {
+  .card-collection__item:nth-child(3) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-3-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(3) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-3-300.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(3):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(3) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-3-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 360px) {
+  .card-collection__item:nth-child(3) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-3-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+.card-collection__item:nth-child(4) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-4.jpg") 0 0/cover no-repeat;
+  border-radius: 50px;
+  background-size: 100% 100%;
+  transition: background-size .3s ease;
+}
+
+.card-collection__item:nth-child(4):hover {
+  cursor: pointer;
+  background-size: 120% 120%;
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(4) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-4.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(4) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-4.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(4) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-4-1024.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(4):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(4) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-4-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 360px) {
+  .card-collection__item:nth-child(4) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-4-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(4) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-4-300.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(4):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(4) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-4-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 360px) {
+  .card-collection__item:nth-child(4) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-4-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+.card-collection__item:nth-child(5) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-5.jpg") 0 0/cover no-repeat;
+  border-radius: 50px;
+  background-size: 100% 100%;
+  transition: background-size .3s ease;
+}
+
+.card-collection__item:nth-child(5):hover {
+  cursor: pointer;
+  background-size: 120% 120%;
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(5) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-5.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(5) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-5.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(5) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-5-1024.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(5):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(5) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-5-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 360px) {
+  .card-collection__item:nth-child(5) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-5-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(5) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-5-300.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(5):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(5) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-5-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 360px) {
+  .card-collection__item:nth-child(5) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-5-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+.card-collection__item:nth-child(6) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-6.jpg") 0 0/cover no-repeat;
+  border-radius: 50px;
+  background-size: 100% 100%;
+  transition: background-size .3s ease;
+  margin: 0;
+}
+
+.card-collection__item:nth-child(6):hover {
+  cursor: pointer;
+  background-size: 120% 120%;
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(6) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-6.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(6) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-6.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-collection__item:nth-child(6) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-6-1024.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(6):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(6) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-6-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 360px) {
+  .card-collection__item:nth-child(6) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-6-1024.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:nth-child(6) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-6-300.jpg") 0 0/cover no-repeat;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+  .card-collection__item:nth-child(6):hover {
+    cursor: pointer;
+    background-size: 120% 120%;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 1024px) {
+  .card-collection__item:nth-child(6) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-6-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+  }
+}
+
+@media (max-width: 360px) and (max-width: 360px) {
+  .card-collection__item:nth-child(6) {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/card tour photo-6-300.jpg") 50%/cover no-repeat;
+    background-size: 100% 100%;
+    transition: background-size .3s ease;
+    border-radius: 20px;
+  }
+}
+
+.card-collection__title {
+  width: 270px;
+  height: 86px;
+  padding: 50px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 122%;
+}
+
+@media (max-width: 1024px) {
+  .card-collection__title {
+    width: 400px;
+    padding: 50px 0 0 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__title {
+    width: 268px;
+    height: 28px;
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    padding: 27px 0 0 25px;
+  }
+}
+
+.card-collection__subtitle {
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+  padding: 55px 50px 0 50px;
+  flex: 1 1 auto;
+}
+
+@media (max-width: 1024px) {
+  .card-collection__subtitle {
+    padding: 23px 50px 0 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__subtitle {
+    font-size: 16px;
+    line-height: 142%;
+    padding: 40px 0 0 25px;
+  }
+}
+
+.card-collection__link {
+  display: block;
+  width: 200px;
+  height: 42px;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 122%;
+  margin: 30px 0 40px 30px;
+  line-height: 42px;
+  padding: 0 0 0 20px;
+  color: #FFF;
+}
+
+.card-collection__link span {
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background: url("../images/icons/arrowright.svg") 11px 11px no-repeat;
+}
+
+@media (max-width: 360px) {
+  .card-collection__link span {
+    width: 40px;
+    height: 27.5px;
+    background: url("../images/icons/arrowright.svg") 11.5px 12.4px no-repeat;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-collection__link {
+    margin: 0px 0 43px 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-collection__link {
+    width: 160px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 0 16px 0px;
+  }
+}
+
+.card-collection__link:hover {
+  background: #286562;
+  border-radius: 50px;
+}
+
+@media (max-width: 1024px) {
+  ._adaptive {
+    margin: 0 53px;
+  }
+}
+
+@media (max-width: 360px) {
+  ._adaptive {
+    margin: 0 21px;
+  }
+}
+
+/*------------------------*/
 /*------------------------*/
