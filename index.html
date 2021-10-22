@@ -97,6 +97,67 @@
                 </div>
             </div>
         </section>
+        <section class="collect-tour">
+            <h2 class="collect-tour__title main-title-block">Собери свой тур</h2>
+            <p class="collect-tour__subtitle main-subtitle-block">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+            <form class="collect-tour__form main-form" action="pentagon-super-pc">
+                <div class="main-form__form-wrapper">
+                    <div class="main-form__item">
+                        <p class="main-form__title">Имя</p>
+                        <input class="main-form__input" placeholder="Введите Ваше имя" tabindex="1" name="username" type="text" />
+                    </div>
+                    <div class="main-form__item">
+                        <p class="main-form__title">Направление</p>
+                        <input class="main-form__input" placeholder="Куда хотите ехать" tabindex="2" name="way" type="text" />
+                        <select class="main-form__select">
+                            <option class="main-form__empty-item"></option>
+                            <option>Азерот</option>
+                            <option>Готэм</option>
+                            <option>Браавос</option>
+                            <option>Анор Лондо</option>
+                            <option>Туссент</option>
+                        </select>
+                    </div>
+                    <div class="main-form__item">
+                        <p class="main-form__title">Email</p>
+                        <input class="main-form__input" placeholder="example@mail.com" tabindex="3" name="email" type="email" />
+                    </div>
+                    <div class="main-form__item">
+                        <p class="main-form__title">Телефон</p>
+                        <input class="main-form__input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" tabindex="4" name="tel" type="tel" />
+                    </div>
+                    <div class="main-form__item">
+                        <p class="main-form__title">Дата от</p>
+                        <input class="main-form__input" placeholder="ДД.ММ.ГГГГ" tabindex="5" name="date" type="date" />
+                    </div>
+                    <div class="main-form__item">
+                        <p class="main-form__title">Дата до</p>
+                        <input class="main-form__input" placeholder="ДД.ММ.ГГГГ" tabindex="6" name="date" type="date" />
+                    </div>
+                    <div class="main-form__comment main-form__block-expansion">
+                        <p class="main-form__title _adaptive-comment">Комментарий</p>
+                        <textarea class="main-form__text-area" tabindex="7" name="text"></textarea>
+                    </div>
+                    <div class="main-form__item main-form__block-expansion">
+                        <p class="main-form__title">Вам есть 18 лет?</p>
+                        <div class="main-form__age-confirm-block">
+                            <input class="main-form__age-confirm" tabindex="8" checked type="radio" name="vote" value="yes" id="yes"/>
+                            <label class="main-form__label" for="yes">Да</label> 
+                            <input class="main-form__age-confirm" tabindex="9" type="radio" name="vote" value="no" id="no"/>
+                            <label class="main-form__label" for="no">Нет</label>
+                        </div>
+                    </div>
+                    <div class="main-form__item main-form__block-expansion">
+                        <input class="main-form__agree-icon" tabindex="10" type="checkbox" name="press" value="press" id="agree"/>
+                        <label class="main-form__agree" for="agree">Нажимая кнопку, я принимаю условия <a class="main-form__agree-link" href="#">Лицензионного договора</a></label>
+                    </div>
+                    <div class="main-form__item">
+                        <button class="main-form__find-tour" tabindex="11" type="submit">Найти тур</button>
+                        <button class="main-form__decline-tour" tabindex="12" type="reset">Сбросить</button>
+                    </div>
+                </div>
+            </form>
+        </section>
     </div>
 </body>
 </html>
