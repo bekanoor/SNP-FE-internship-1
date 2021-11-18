@@ -1,0 +1,233 @@
+.choose-tour {
+    max-width: 1920px;
+    margin: 0 auto;
+    @media (max-width:1024px) {
+        max-width: 1024px;
+    }
+    @media (max-width:360px) {
+        max-width: 360px;
+    }
+
+    &__wrapper {
+        max-width: 1170px;
+        margin: 0 auto;
+
+        @media (max-width:1024px) {
+            max-width: 1024px;
+        }
+        @media (max-width:360px) {
+            max-width: 360px;
+        }
+    }
+    &__title {
+        max-width: 480px;
+        margin: 135px auto 0 auto;
+
+        @media (max-width:1024px) {
+            margin: 135px auto 0 auto;
+        }
+        @media (max-width:360px) {
+            margin: 75px auto 0 auto;
+        }
+    }
+
+    &__list {
+        max-width: 700px;
+        height: 34px;
+        display: flex;
+        justify-content: space-between;
+        margin: 35px auto 100px auto;
+
+        @media (max-width:1024px) {
+            margin: 35px auto 100px;    
+        }
+        @media (max-width:360px) {
+            justify-content: start;
+            width: 270px;
+            flex-wrap: wrap;
+            margin: 32px 42px 70px;
+        }
+    }
+
+    &__item {
+        &:first-child a {
+            color: $orange-hover;
+            border-bottom: 2px solid $orange-hover;
+        }
+
+        @media (max-width:360px) {
+            padding: 1px 0 0 10px;
+
+            &:nth-child(4) {
+                padding: 14px 0 0 50px;
+            }
+            &:nth-child(5) {
+                padding: 14px 0 0 10px;
+            }
+        }
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 122%;
+        color: $primary-black;
+
+        &:hover {
+            border-bottom: 2px solid $primary-black;
+        }
+
+        @media (max-width:360px) {
+            font-size: 16px;
+        }
+    }
+}
+.card-collection {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media (max-width:360px) {
+        width: 360px;
+    }
+
+    &__item { 
+        display: inline-block;
+        width: 370px;
+        height: 531px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px 30px 0;
+
+        @media (max-width:1024px) {
+            width: 450px;
+            height: 531px;
+            margin: 0 18px 18px 0;
+        }
+
+        @media (max-width:360px) {
+            width: 318px;
+            height: 318px;
+        }
+        
+        &:nth-child(1) {
+            @include bg-for-travel-block ('../images/card tour photo-1.jpg');
+
+            @media (max-width:1024px) {
+                @include bg-for-travel-block ('../images/card tour photo-1-1024.jpg');
+            }
+            @media (max-width:360px) {
+                @include bg-for-travel-block ('../images/card tour photo-1-300.jpg');
+            }
+        }
+        &:nth-child(2) {
+            @include bg-for-travel-block ('../images/card tour photo-2.jpg');
+            
+            @media (max-width:1024px) {
+                @include bg-for-travel-block ('../images/card tour photo-2-1024.jpg');
+            }
+            @media (max-width:360px) {
+                @include bg-for-travel-block ('../images/card tour photo-2-300.jpg');
+            }
+        }
+        &:nth-child(3) {
+            @include bg-for-travel-block ('../images/card tour photo-3.jpg');
+            margin: 0;
+
+            @media (max-width:1024px) {
+                margin: 0 18px 18px 0;
+                @include bg-for-travel-block ('../images/card tour photo-3-1024.jpg');
+            }
+            @media (max-width:360px) {
+                @include bg-for-travel-block ('../images/card tour photo-3-300.jpg');
+            }
+        }
+        &:nth-child(4) {
+            @include bg-for-travel-block ('../images/card tour photo-4.jpg');
+
+            @media (max-width:1024px) {
+                @include bg-for-travel-block ('../images/card tour photo-4-1024.jpg');
+            }
+            @media (max-width:360px) {
+                @include bg-for-travel-block ('../images/card tour photo-4-300.jpg');
+            }
+        }
+        &:nth-child(5) {
+            @include bg-for-travel-block ('../images/card tour photo-5.jpg');
+
+            @media (max-width:1024px) {
+                @include bg-for-travel-block ('../images/card tour photo-5-1024.jpg');
+            }
+            @media (max-width:360px) {
+                @include bg-for-travel-block ('../images/card tour photo-5-300.jpg');
+            }
+        }
+        &:nth-child(6) {
+            @include bg-for-travel-block ('../images/card tour photo-6.jpg');
+            margin: 0;
+
+            @media (max-width:1024px) {
+                @include bg-for-travel-block ('../images/card tour photo-6-1024.jpg');
+            }
+            @media (max-width:360px) {
+                @include bg-for-travel-block ('../images/card tour photo-6-300.jpg');
+            }
+        }
+    }
+    
+    &__title {
+        width: 270px;
+        height: 86px;
+        padding: 50px;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 122%;
+
+        @media (max-width:1024px) {
+            width: 400px;
+            padding: 50px 0 0 50px;
+        }
+        @media (max-width:360px) {
+            width: 268px;
+            height: 28px;
+            font-size: 23px;
+            line-height: 120%;
+            letter-spacing: 0.04em;
+            padding: 27px 0 0 25px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 17px;
+        line-height: 142%;
+        letter-spacing: -0.01em;
+        padding: 55px 50px 0 50px;
+        flex: 1 1 auto;
+
+        @media (max-width:1024px) {
+            padding: 23px 50px 0 50px;
+        }
+        @media (max-width:360px) {
+            font-size: 16px;
+            line-height: 142%;
+            padding: 40px 0 0 25px;
+        }
+    }
+    
+    &__link {
+        margin: 30px 0 43px 30px;
+
+        @media (max-width:360px) {
+            margin: 0 0 18px 0;
+        }
+    }
+    
+}
+._adaptive {
+    @media (max-width:1024px) {
+        margin: 0 53px;
+    }
+    @media (max-width:360px) {
+        margin: 0 21px;
+    }
+}

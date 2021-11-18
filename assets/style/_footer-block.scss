@@ -1,0 +1,127 @@
+footer {
+    max-width: 1920px;
+    background-color: #F4F0E9;
+    height: 88px;
+    margin: 0 auto;
+
+    @media (max-width: 1024px) {
+        max-width: 1024px;        
+    }
+    @media (max-width: 360px) {
+        max-width: 360px;    
+        height: 95px;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1168px;
+    height: 88px;
+    margin: 0 auto;
+
+    @media (max-width: 1024px) {
+        max-width: 918px;    
+    }
+    @media (max-width: 360px) {
+        max-width: 360px;    
+        height: 95px;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 75px auto;
+    }
+
+    &__text {
+        color: $primary-gray;
+        line-height: 142%;
+
+        @media (max-width: 360px) {
+            margin-top: 21px;
+        }
+    }
+
+    &__list {
+        height: 28px;
+        width: 420px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 360px) {
+            width: 307px;
+            height: 23px;    
+            margin-top: 7px;
+        }
+    }
+
+    &__item {
+        width: 125px;
+
+        @media (max-width: 360px) {
+            width: 92px;
+
+            &:nth-child(3) {
+                position: relative;
+                top: 0;
+                left: 2px;
+            }
+        }
+    }
+
+    &__link {
+        color: $primary-black;
+        display: flex;
+        line-height: 142%;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 360px) {
+        }
+    }
+    
+    &__link span {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        
+        @media (max-width: 360px) {
+            width: 20px;
+            height: 15px;
+        }
+    }
+
+    &__inst {
+        background: url('../images/icons/inst.svg') 0px 0px no-repeat;
+
+        @media (max-width: 360px) {
+            position: relative;
+            top: 0;
+            left: 2px;
+            background: url('../images/icons/inst-360.svg') 0px 0px no-repeat;
+        }
+    }
+
+    &__fb {
+        background: url('../images/icons/fb.svg') 3px 0px no-repeat;
+
+        @media (max-width: 360px) {
+            position: relative;
+            top: 0;
+            left: 2px;
+            background: url('../images/icons/fb-360.svg') 8px 0px no-repeat;
+        }
+    }
+
+    &__vk {
+        background: url('../images/icons/vk.svg') 0px 0px no-repeat;
+
+        @media (max-width: 360px) {
+            position: relative;
+            top: 2px;
+            background: url('../images/icons/vk-logo-360.svg') 0px 0px no-repeat;
+        }
+    }
+}
