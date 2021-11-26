@@ -138,17 +138,6 @@ body {
   }
 }
 
-.main-link-item:hover {
-  background: #286562;
-  border-radius: 50px;
-}
-
-@media (max-width: 360px) {
-  .main-link-item:hover {
-    background: none;
-  }
-}
-
 .main-link-item:active {
   background: #EFA501;
 }
@@ -511,6 +500,17 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 30px 30px 0;
+}
+
+.card-collection__item:hover .main-link-item {
+  background: #286562;
+  border-radius: 50px;
+}
+
+@media (max-width: 360px) {
+  .card-collection__item:hover {
+    background: none;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1347,6 +1347,8 @@ body {
   height: 986px;
   border-radius: 50px;
   background-color: #FFFFFF;
+  /*  checked */
+  /* disabled */
 }
 
 @media (max-width: 1024px) {
@@ -1508,7 +1510,7 @@ body {
 }
 
 .main-form__input:focus {
-  border: #1B1F2B solid 1px;
+  border: #A6A6A6 solid 1px;
 }
 
 .main-form__select {
@@ -1586,20 +1588,63 @@ body {
   }
 }
 
-.main-form__age-confirm {
+.main-form__custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.main-form__custom-radio + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-form__custom-radio + label::before {
+  content: '';
+  display: inline-block;
   width: 26px;
   height: 26px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #1B1F2B;
+  border-radius: 50%;
+  margin-right: 0.5em;
 }
 
 @media (max-width: 360px) {
-  .main-form__age-confirm {
+  .main-form__custom-radio + label::before {
     width: 20px;
     height: 20px;
   }
 }
 
+.main-form__custom-radio:checked + label::before {
+  background: url("../images/icons/ellipse-for-check.svg") center no-repeat;
+}
+
+@media (max-width: 360px) {
+  .main-form__custom-radio:checked + label::before {
+    background: url("../images/icons/ellipse-for-check-360.svg") center no-repeat;
+  }
+}
+
+.main-form__custom-radio:disabled + label::before {
+  background-color: #e9ecef;
+}
+
 .main-form__age-confirm-block {
-  margin-top: 9px;
+  margin-top: 15px;
   height: 26px;
   color: #1B1F2B;
 }
@@ -1607,6 +1652,16 @@ body {
 @media (max-width: 360px) {
   .main-form__age-confirm-block {
     margin-top: 5px;
+  }
+}
+
+.main-form ._age-confirm-margin {
+  margin-left: 27px;
+}
+
+@media (max-width: 360px) {
+  .main-form ._age-confirm-margin {
+    margin-left: 25px;
   }
 }
 
@@ -1650,12 +1705,12 @@ body {
 }
 
 .main-form__agree-wrapper {
-  margin-top: 33px;
+  margin-top: 30px;
 }
 
 @media (max-width: 1024px) {
   .main-form__agree-wrapper {
-    margin-top: 33px;
+    margin-top: 28px;
   }
 }
 
@@ -2230,10 +2285,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 30px;
 }
 
 @media (max-width: 360px) {
@@ -2355,6 +2410,17 @@ body {
   margin: 50px auto;
   padding: 60px 60px 48px 60px;
   overflow: hidden;
+}
+
+.trip-history__item:hover .main-link-item {
+  background: #286562;
+  border-radius: 50px;
+}
+
+@media (max-width: 360px) {
+  .trip-history__item:hover {
+    background: none;
+  }
 }
 
 @media (max-width: 360px) {

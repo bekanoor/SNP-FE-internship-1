@@ -110,15 +110,6 @@ $primary-gray: #A6A6A6;
             background: url('../images/icons/arrowright.svg') 11px 15px no-repeat;
         }
     }
-    
-    &:hover {
-        background: #286562;
-        border-radius: 50px;
-
-        @media (max-width:360px) {
-            background: none;
-        }
-    }
 
     &:active {
         background: #EFA501;

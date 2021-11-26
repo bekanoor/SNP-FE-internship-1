@@ -127,8 +127,8 @@
 
     &__third-row {
         display: flex;
-        justify-content: space-between;
         padding-top: 30px;
+        justify-content: space-between;
 
         @media (max-width:360px) {
             padding-top: 18px;

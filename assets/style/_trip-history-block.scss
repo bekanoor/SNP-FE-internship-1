@@ -59,6 +59,17 @@
         padding: 60px 60px 48px 60px;
         overflow: hidden;
         
+        &:hover {
+            .main-link-item {
+                background: #286562;
+                border-radius: 50px;
+            }
+
+            @media (max-width:360px) {
+                background: none;
+            }
+        }
+        
         @media (max-width: 360px) {
             margin: 20px auto 0 auto;
             padding: 30px;

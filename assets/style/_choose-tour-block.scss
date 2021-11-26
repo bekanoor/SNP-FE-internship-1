@@ -99,6 +99,17 @@
         flex-direction: column;
         margin: 0 30px 30px 0;
 
+        &:hover {
+            .main-link-item {
+                background: #286562;
+                border-radius: 50px;
+            }
+
+            @media (max-width:360px) {
+                background: none;
+            }
+        }
+        
         @media (max-width:1024px) {
             width: 450px;
             height: 531px;
